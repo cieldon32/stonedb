@@ -4,10 +4,11 @@ import { DownloadOutlined, RightOutlined } from '@ant-design/icons';
 import Translate from '@docusaurus/Translate';
 import { useHistory, useLocation } from '@docusaurus/router';
 import {loadScript} from '@site/src/utils';
-import { Context } from '../styles';
+import { Context, Panel } from '../styles';
 import { Item, DownLoadBtn } from './styles';
 
-const Download: React.FC = () => {
+const Download: React.FC = (props: any) => {
+  const strs = props.children.split('\n');
   const history = useHistory();
   const location = useLocation()
   const renderAd = async () => {    
@@ -49,15 +50,12 @@ const Download: React.FC = () => {
   }, [location.pathname]);
 
   return (
+    <Panel>
     <Context>
       <Space size={10}>
         <Item>
-          <h2>
-            <Translate id="home.download.title">StoneDB for MySQL</Translate>
-          </h2>
-          <p>
-            <Translate id="home.download.desc">一个基于MySQL的开源实时HTAP数据库</Translate>
-          </p>
+          <h2>{strs[0]}</h2>
+          <p>{strs[1]}</p>
           <Space>
             <DownLoadBtn size="large" type="primary" onClick={gotoDownload}>
               <Translate id="home.download.btn">下载</Translate>
@@ -75,6 +73,8 @@ const Download: React.FC = () => {
         </Item>
       </Space>
     </Context>
+    </Panel>
   );
 };
+
 export default Download;

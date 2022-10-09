@@ -5,6 +5,8 @@ import styled from 'styled-components';
 export const Item = styled.div`
   flex: 1;
   padding: 14px;
+  height: 440px;
+  overflow: hidden;
   h2 {
     font-size: 55px;
     font-weight: 400;
