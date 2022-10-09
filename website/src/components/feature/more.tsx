@@ -1,5 +1,4 @@
 import React from 'react';
-import {IMore, SMore} from './interface';
 import { Button, ButtonIcon, ListWrap, MostWrap, ValueWrap, ValueIcon } from "./styles";
 
 
@@ -52,13 +51,13 @@ export class More extends React.Component {
 
   override render() {
     return (
-      <MostWrap open={this.state.open}>
-        {this.props.children}
+      <>
+        <MostWrap open={this.state.open}>{this.props.children}</MostWrap>
         <Button onClick={this.onToggle}>
           {this.state.open ? '收起' : '展开'}
           <ButtonIcon open={this.state.open} name="BottomOutlined" />
         </Button>
-      </MostWrap>
+      </>
     )
   }
 }

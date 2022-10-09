@@ -87,16 +87,10 @@ export const ValueIcon = styled(Icon)`
 `
 
 export const MostWrap: StyledComponent<"div", any, {open: boolean}, never> = styled.div`
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding-top: 105px;
   overflow: hidden;
   border-radius: 10px;
   ${({open}: any) => open ? `
     height: auto;
-    z-index: 2;
     ${ListWrap},
     dl{
       margin: 0;
@@ -105,7 +99,7 @@ export const MostWrap: StyledComponent<"div", any, {open: boolean}, never> = sty
       }
     }
   ` : `
-    height: 24px;
+    height: 0;
   `}
   dl{
     text-align: left;
@@ -125,22 +119,23 @@ export const MostWrap: StyledComponent<"div", any, {open: boolean}, never> = sty
   }
 `;
 
-export const ItemWrap = styled.div`
-  color: #fff;
+export const ItemContext = styled.div`
+  
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   flex: 1;
   text-align: center;
+`;
+
+export const ItemWrap = styled.div`
+  position: relative;
+  color: #fff;
+  height: 145px;
+  cursor: pointer;
   border-radius: 10px;
   padding: 40px 35px;
-  height: 145px;
-  position: relative;
-  cursor: pointer;
-  overflow: visible;
-  position: relative;
-  z-index: auto;
   ${ListWrap},
   dl{
     background: #232326;
