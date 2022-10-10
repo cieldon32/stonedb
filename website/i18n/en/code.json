@@ -360,10 +360,10 @@
     "message": "StoneDB will be release at June 29th,2022. Go to downloads page to find …"
   },
   "home.feature.close": {
-    "message": "收起"
+    "message": "Fold"
   },
   "home.feature.open": {
-    "message": "展开"
+    "message": "More"
   },
   "theme.admonition.note": {
     "message": "note",
