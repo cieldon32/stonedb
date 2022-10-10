@@ -8,105 +8,105 @@ A Real-time HTAP Database
 ```custom-feature
 - Features
     - Features_sqlFilled
-        - 100% compatible with MySQL 5.7
-        - Compatible with MySQL ecosystem, no change on the business side
+        - 100% Compatible with MySQL 5.7
+        - Built on MySQL 5.7, requiring zero code change to switch from MySQL
         1. HTAP for MySQL
-        2. Fully supports MySQL syntax and functions
-        3. Rich MySQL ecosystem tools and Solutions
-        4. Smooth migration of business and data
-        - Core value
+        2. Full support for MySQL syntaxes and features
+        3. Compatible with rich MySQL ecosystem tools and solutions
+        4. Smooth migration of services and data
+        - Benefits
             - Sql_1Filled
-                - Save the cost of developing database applications
+                - Saves the cost for developing database applications
             - Sql_2Filled
-                - Enterprises have a new choice
+                - Offers a database alternative for enterprises
     - Features_htapFilled
-        - Transaction + Analysis Integration
-        - All-in-one solution for transactional/analytical workloads
-        1. No complex and time-consuming ETL
-        2. The transactional load is effectively isolated from the analytical load
-        3. Real-time synchronization of transactional data to the analysis engine
-        4. Meet the transaction acid property
-        - Core value
+        - Integration of OLTP and OLAP
+        - An all-in-one solution for hybrid transaction/analytical workloads
+        1. Eliminates complex and time-consuming ELT
+        2. Effectively isolates analytical workloads from transaction workloads
+        3. Synchronizes transaction data to the OLAP engine in real time
+        4. Satisfies the ACID properties
+        - Benefits
             - Htap_1Filled
-                - Real-time data analysis
-                - Directly analyze the latest data and provide the most real-time decision support
+                - Real-Time Analytics
+                - Analyzes the most recent data to support decision making
             - Htap_2Filled
-                - Simplify the architecture
-                - Greatly simplify the architecture complexity of real-time data services, and reduce operation and maintenance costs
+                - Simplified Architecture
+                - Simplifies the architecture for OLAP and reduces operational and maintenance costs
             - Htap_3Filled
-                - Business agility
-                - Enables real-time analysis business to be quickly formed and implemented, accelerating digital transformation and business promotion
+                - Ultimate Business Agility
+                - Enables fast implementation of real-time analysis services, accelerating digital transformation and service promotion
     - Features_openFilled
-        - Open source
-        - Extensive community user & Developer Support
-        1. The core code and related tools are completely open source
-        2. Open source community to support the rapid evolution of products
-        3. The community gathers strength and responds quickly to problems
-        - Core value
+        - Open Source
+        - Gains extensive support from community users & developers
+        1. Core code and related tools available for free
+        2. Rich talented community users, helping rapid product evolution
+        3. Community-powered ability to quickly respond to problems
+        - Benefits
             - Open_1Filled
-                - Fully open source
+                - Full Open Source
             - Open_2Filled
-                - Ecological compatibility
-                - With many related peripheral solutions and tools, many and mature developers, and low cost of use
+                - Ecosystem-Compatible, Minimizing the TCO
+                - Supports solutions and tools in the MySQL ecosystem which benefits from numerous professional developers
     - Features_searchFilled
-        - 10x the performance of MySQL
-        - Millisecond response of 100 million-level multi-table association analysis
-        1. Support vectorization execution
-        2. Support knowledge grid and rough set filtering
-        3. Rapid data import
-        4. Support intelligent row and column mixed storage and quick search
-        - Core value
+        - 10x the Query Speed of MySQL
+        - Responds to joins on hundreds of billions of records from multiple tables in milliseconds
+        1. Vectorized query execution
+        2. Knowledge Grid and Rough Set-based filtering
+        3. Efficient data loading
+        4. Intelligent hybrid row-column storage and fast search
+        - Benefits
             - Search_1Filled
-                - Massive real-time data analysis, providing the most real-time decision support, and exploring more value in the data
+                - Real-Time Analytics on Massive Data, Enabling Decision Making Based on Most Recent Data and Deeper Insights to the Data
     - Features_inputFilled
-        - 10x the data import speed of MySQL
-        - All data is stored in memory in column format
-        1. Horizontal partition based on row stored data
-        2. The partition is organized into columns according to the schema definition
-        3. Intelligent data hash, multi disk parallel IO
-        4. Multi CPU parallel, thread pool + lock-free queue
-        - Core value
+        - 10x the Data Load Speed of MySQL
+        - Stores all data in memory column by column
+        1. Horizontally partitions data organized by row
+        2. Organizes data in each partition by column based on the schema
+        3. Intelligent data hashing, allowing multi-disk parallel I/O
+        4. Multi-CPU parallel computing, thread pooling, and lock-free queuing
+        - Benefits
             - Input_1Filled
-                - Improve the integrity and freshness of the dependent data of the analysis model and reduce the waiting time of the analysis results
+                - Integrate and Fresh Data for Analytics, Instant Response to Analytical Queries
     - Features_storageFilled
-        - 1/10 storage cost of MySQL
-        - Efficient compression algorithm can achieve up to 90% resource cost savings
-        1. Compress all data to achieve 40 times compression ratio
-        2. Support Technology & Architecture enhancement in business areas
-        3. Seamless integration of business side / middleware products
-        4. The migration cost is controllable
-        - Core value
+        - One Tenth the Cost of MySQL
+        - Reduces up to 90% storage space by using efficient data compression algorithms
+        1. Full data compression at a compression ratio up to 40:1
+        2. Enhanced techniques and robust architecture
+        3. Seamless integration with third-party middleware
+        4. Minimal migration cost
+        - Benefits
             - Sql_1Filled
-                - Reduce the TCO cost of enterprises to provide low-cost data services available to everyone
+                - Minimal TCO, Making Data Services Affordable to Everyone
 ```
 
 ```custom-roadMap 2022-10-10
 - Roadmap
     - StoneDB_5.6_v1.0.0
-        1. Integrated row and column mixed storage+memory computing architecture
-        2. Cost Based Intelligent HTAP Query Engine
-        3. Intelligent compression technology
+        1. Support integrated hybrid row-column storage and use an in-memory computing architecture.
+        2. Provide a cost-based intelligent HTAP storage engine.
+        3. Support intelligent data compression.
         - 2022-06-29
     - StoneDB_5.7_v1.0.0
-        - Adapt to MySQL 5.7
+        - Adapt to MySQL 5.7.
         - 2022-08-31
     - StoneDB_8.0_v1.0.0
-        - Adapt to MySQL 8.0
+        - Adapt to MySQL 8.0.
         - 2022-10-10
     - StoneDB_5.7_v1.0.1
-        1. Improve 8 slow SQL in TPC-H
-        2. Optimization query module
-        3. Add delete function
-        4. Add binlog replication and support row format
+        1. Improve the processing performance of the 8 TPC-H queries that take long to complete execution.
+        2. Optimize the query module.
+        3. Add the support for DELETE statements.
+        4. Add the support for binlogs in the row-based format.
         - 2022-10-20
     - StoneDB_5.7_v1.0.2
-        1. Upgrade basic components to improve performance and security
-        2. Add partition function
-        3. Add parallel function
-        4. Add vectorization execution function
+        1. Upgrade basic components to improve performance, security, etc.
+        2. Add the partitioning feature.
+        3. Add the parallel processing feature.
+        4. Add the vectorized processing feature.
         - 2022-12-31
     - StoneDB_v2.0.0
-        - New architecture
+        - Launch the brand new V2.0 architecture.
         - 2023~
 ```
 
