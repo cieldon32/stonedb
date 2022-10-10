@@ -41,50 +41,78 @@
   },
   "sidebar.autoSidebar.category.Create and Manage Database Objects": {
     "message": "创建和管理数据库对象",
-    "description": "The label for category Connect to StoneDB in sidebar autoSidebar"
+    "description": "The label for category Create and Manage Database Objects in sidebar autoSidebar"
   },
   "sidebar.autoSidebar.category.Appendix": {
     "message": "附录",
-    "description": "The label for category Connect to StoneDB in sidebar autoSidebar"
+    "description": "The label for category Appendix in sidebar autoSidebar"
   },
   "sidebar.autoSidebar.category.SQL Reference": {
     "message": "SQL 参考",
-    "description": "The label for category Connect to StoneDB in sidebar autoSidebar"
+    "description": "The label for category SQL Reference in sidebar autoSidebar"
   },
   "sidebar.autoSidebar.category.Operators": {
     "message": "运算符",
-    "description": "The label for category Connect to StoneDB in sidebar autoSidebar"
+    "description": "The label for category Operators in sidebar autoSidebar"
   },
   "sidebar.autoSidebar.category.Functions": {
     "message": "函数",
-    "description": "The label for category Connect to StoneDB in sidebar autoSidebar"
+    "description": "The label for category Functions in sidebar autoSidebar"
   },
   "sidebar.autoSidebar.category.Performance Tuning": {
     "message": "性能优化",
-    "description": "The label for category Connect to StoneDB in sidebar autoSidebar"
+    "description": "The label for category Performance Tuning in sidebar autoSidebar"
   },
   "sidebar.autoSidebar.category.Performance Monitoring Commands": {
     "message": "性能相关命令",
-    "description": "The label for category Connect to StoneDB in sidebar autoSidebar"
+    "description": "The label for category Performance Monitoring Commands in sidebar autoSidebar"
   },
   "sidebar.autoSidebar.category.Database Tuning": {
     "message": "数据库优化",
-    "description": "The label for category Connect to StoneDB in sidebar autoSidebar"
+    "description": "The label for category Database Tuning in sidebar autoSidebar"
   },
   "sidebar.autoSidebar.category.Architecture Tuning": {
     "message": "架构优化",
-    "description": "The label for category Connect to StoneDB in sidebar autoSidebar"
+    "description": "The label for category Architecture Tuning in sidebar autoSidebar"
   },
   "sidebar.autoSidebar.category.Performance Tests": {
     "message": "性能测试",
-    "description": "The label for category Connect to StoneDB in sidebar autoSidebar"
+    "description": "The label for category Performance Tests in sidebar autoSidebar"
   },
   "sidebar.autoSidebar.category.Data Migration to StoneDB": {
     "message": "向StoneDB迁移数据",
-    "description": "The label for category Connect to StoneDB in sidebar autoSidebar"
+    "description": "The label for category Data Migration to StoneDB in sidebar autoSidebar"
   },
   "sidebar.autoSidebar.category.Troubleshooting": {
     "message": "故障诊断",
-    "description": "The label for category Connect to StoneDB in sidebar autoSidebar"
+    "description": "The label for category Troubleshooting in sidebar autoSidebar"
+  },
+  "sidebar.autoSidebar.category.Quick Deployment": {
+    "message": "Quick Deployment",
+    "description": "The label for category Quick Deployment in sidebar autoSidebar"
+  },
+  "sidebar.autoSidebar.category.Compile StoneDB on CentOS7.x": {
+    "message": "Compile StoneDB on CentOS7.x",
+    "description": "The label for category Compile StoneDB on CentOS7.x in sidebar autoSidebar"
+  },
+  "sidebar.autoSidebar.category.Compile StoneDB on RedHat7.x": {
+    "message": "Compile StoneDB on RedHat7.x",
+    "description": "The label for category Compile StoneDB on RedHat7.x in sidebar autoSidebar"
+  },
+  "sidebar.autoSidebar.category.Compile StoneDB on Ubuntu20.04": {
+    "message": "Compile StoneDB on Ubuntu20.04",
+    "description": "The label for category Compile StoneDB on Ubuntu20.04 in sidebar autoSidebar"
+  },
+  "sidebar.autoSidebar.category.OLAP": {
+    "message": "OLAP",
+    "description": "The label for category OLAP in sidebar autoSidebar"
+  },
+  "sidebar.autoSidebar.category.OLTP": {
+    "message": "OLTP",
+    "description": "The label for category OLTP in sidebar autoSidebar"
+  },
+  "sidebar.autoSidebar.category.FAQ": {
+    "message": "FAQ",
+    "description": "The label for category FAQ in sidebar autoSidebar"
   }
 }
