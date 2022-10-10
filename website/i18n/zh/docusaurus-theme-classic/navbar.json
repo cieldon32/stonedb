@@ -16,7 +16,7 @@
     "description": "Navbar item with label Community"
   },
   "item.label.Blog": {
-    "message": "Blog",
+    "message": "博客",
     "description": "Navbar item with label Blog"
   }
 }
