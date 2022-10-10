@@ -16,7 +16,7 @@ const Download: React.FC = (props: any) => {
     // 实例化 PAG
     const PAG = await (window as any).libpag.PAGInit();
     // 获取 PAG 素材数据
-    const buffer = await fetch("https://static.stoneatom.com/assets/12342342424331324.pag").then(
+    const buffer = await fetch("https://static.stoneatom.com/assets/stonedb.pag").then(
       (response) => response.arrayBuffer()
     );
     // 加载 PAG 素材为 PAGFile 对象
