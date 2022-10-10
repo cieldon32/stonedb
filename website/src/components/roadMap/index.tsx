@@ -27,7 +27,6 @@ const RoadMap: React.FC<any> = ({type, children}) => {
     return arr.map((item) => {
       const title = item.children[0]?.type === 'paragraph' ? item.children[0]?.children[0]?.value : '';
       const nodeList = item.children[1]?.children;
-      console.log('nodeList', nodeList)
       const res =  nodeList?.map((data) => {
         const list = reduceParagraph(data.children.filter((node) => node.ordered));
         const [title, desc, time] = flatten(reduceParagraph(data.children.filter((node) => !node.ordered)));
