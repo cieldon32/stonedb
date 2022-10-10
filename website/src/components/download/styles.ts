@@ -1,6 +1,11 @@
 import { Button } from 'antd';
 import styled from 'styled-components';
+import { Panel } from '../styles';
 
+export const PanelWrap = styled(Panel)`
+  background-size: auto 100%;
+  background-position-x: right;
+`
 
 export const Item = styled.div`
   flex: 1;

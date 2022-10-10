@@ -48,6 +48,7 @@ import TimeOutFilled from './svg/TimeOutFilled.svg';
 import TwitterFilled from './svg/TwitterFilled.svg';
 import WechatOutFilled from './svg/WechatOutFilled.svg';
 import MailOutlined from './svg/MailOutlined.svg';
+import BgDownload from './svg/BgDownload.png';
 
 const svg: Record<string, ReactNode> = {
     MailOutlined: <MailOutlined width="1em" height="1em" />,
@@ -99,5 +100,6 @@ const svg: Record<string, ReactNode> = {
     TimeOutFilled: <TimeOutFilled width="1em" height="1em" />,
     TwitterFilled: <TwitterFilled width="1em" height="1em" />,
     WechatOutFilled: <WechatOutFilled width="1em" height="1em" />,
+    BgDownload: <img src={BgDownload} />
 }
 export default svg;

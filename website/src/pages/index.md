@@ -110,9 +110,6 @@ A Real-time HTAP Database
         - 2023~
 ```
 
-```custom-showCase
-
-```
 
 ```custom-customers
 - Trusted and Verified by Innovation Leaders

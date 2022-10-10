@@ -4,8 +4,9 @@ import { DownloadOutlined, RightOutlined } from '@ant-design/icons';
 import Translate from '@docusaurus/Translate';
 import { useHistory, useLocation } from '@docusaurus/router';
 import {loadScript} from '@site/src/utils';
-import { Context, Panel } from '../styles';
-import { Item, DownLoadBtn } from './styles';
+import BgDownload from '@site/static/resource/BgDownload.png';
+import { Context } from '../styles';
+import { Item, DownLoadBtn, PanelWrap } from './styles';
 
 const Download: React.FC = (props: any) => {
   const strs = props.children.split('\n');
@@ -50,7 +51,7 @@ const Download: React.FC = (props: any) => {
   }, [location.pathname]);
 
   return (
-    <Panel>
+    <PanelWrap bg={BgDownload}>
     <Context>
       <Space size={10}>
         <Item>
@@ -73,7 +74,7 @@ const Download: React.FC = (props: any) => {
         </Item>
       </Space>
     </Context>
-    </Panel>
+    </PanelWrap>
   );
 };
 

@@ -1,6 +1,12 @@
 
 import styled, { StyledComponent } from 'styled-components';
 import Icon, {IIcon} from "@site/src/icon";
+import { Panel } from '../styles';
+
+export const PanelWrap = styled(Panel)`
+  background-size: contain;
+  background-position-x: center;
+`
 
 export const List = styled.div`
   overflow: hidden;
@@ -77,6 +83,18 @@ export const ValueWrap = styled.div`
   border-radius: 10px;
   padding: 10px;
   margin: 0 10px;
+  flex: 1;
+  p,
+  span{
+    font-size: 14px;
+    line-height: 24px;
+  }
+  p{
+    font-weight: 500;
+  }
+  span{
+    font-weight: 400;
+  }
 `
 
 export const ValueIcon = styled(Icon)`
@@ -86,24 +104,14 @@ export const ValueIcon = styled(Icon)`
   line-height: 34px;
 `
 
-export const MostWrap: StyledComponent<"div", any, {open: boolean}, never> = styled.div`
+export const MostWrap = styled.div`
   overflow: hidden;
   border-radius: 10px;
-  ${({open}: any) => open ? `
-    height: auto;
-    ${ListWrap},
-    dl{
-      margin: 0;
-      p{
-        margin: 0;
-      }
-    }
-  ` : `
-    height: 0;
-  `}
+  height: 0;
   dl{
     text-align: left;
     padding: 20px;
+    margin: 0;
     dt{
       font-size: 16px;
       font-weight: 500;
@@ -115,31 +123,29 @@ export const MostWrap: StyledComponent<"div", any, {open: boolean}, never> = sty
       flex-direction: row;
       text-align: center;
       margin: 0 -10px;
+      p{
+        margin: 0;
+      }
     }
   }
 `;
 
 export const ItemContext = styled.div`
-  
+  padding: 40px 35px 0 35px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  flex: 1;
   text-align: center;
 `;
 
-export const ItemWrap = styled.div`
+export const ItemWrap: StyledComponent<"div", any, {open: boolean}, never> = styled.div`
   position: relative;
   color: #fff;
-  height: 145px;
   cursor: pointer;
   border-radius: 10px;
-  padding: 40px 35px;
-  ${ListWrap},
-  dl{
-    background: #232326;
-  }
+  flex: 1;
+  padding-bottom: 40px;
   &:hover{
     background: #333336;
     ${Button} {
@@ -150,11 +156,15 @@ export const ItemWrap = styled.div`
       background: #E5E8F0;
       fill: #373C43;
     }
-    ${ListWrap},
-    dl{
-      background: #333336;
-    }
   }
+
+  ${({open}: any) => open ? `
+    background: #333336;
+    ${MostWrap}{
+      height: auto;
+    }
+  ` : null}
+
   @media (max-width: 996px){
     width: 100%;
     padding: 14px;

@@ -4,8 +4,10 @@ import remarkParse from 'remark-parse';
 import {flatten} from 'ramda';
 import {pickWhen} from '@site/src/utils';
 import { Grid, Row, Cell } from "@site/src/hm";
+import BgFeature from '@site/static/resource/BgFeature.png';
 import {Item} from './Item';
-import { Title, Context, Panel } from "../styles";
+import { Title, Context } from "../styles";
+import {PanelWrap} from './styles';
 
 const Feature: React.FC<any> = ({children}) => {
   const [title, setTitle] = useState(null);
@@ -61,7 +63,7 @@ const Feature: React.FC<any> = ({children}) => {
     init();
   }, []);
   return (
-    <Panel color='#232326'>
+    <PanelWrap color='#232326' bg={BgFeature}>
     <Context>
       <Title color="#FFFFFF">{title}</Title>
       <Grid>
@@ -76,7 +78,7 @@ const Feature: React.FC<any> = ({children}) => {
         </Row>
       </Grid>
     </Context>
-    </Panel>
+    </PanelWrap>
   );
 };
 export default Feature;

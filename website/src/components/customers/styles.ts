@@ -1,4 +1,10 @@
 import styled from 'styled-components';
+import { Panel } from '../styles';
+
+export const PanelWrap = styled(Panel)`
+  background-size: contain;
+  background-position-x: center;
+`
 
 export const Title = styled.div`
   text-align: center;

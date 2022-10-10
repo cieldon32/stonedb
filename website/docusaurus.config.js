@@ -5,7 +5,7 @@ const modifyVars = require('./scripts/config.theme.js');
 // const ulRemark = require('./src/remark/ul');
 // const math = require('./src/remark/remark-math');
 // const imageList = require('./src/remark/imageList');
-
+const path = require('path');
 const isDev = process.env.NODE_ENV === 'development';
 
 const isDeployPreview =
@@ -69,8 +69,6 @@ const config = {
         blog: {
           // routeBasePath: '/',
           path: 'blog',
-          blogSidebarTitle: '分类',
-          blogSidebarCount: 'ALL',
           // editUrl: ({locale, blogDirPath, blogPath}) => {
           //   if(locale !== 'en') {
           //     return `https://github.com/stoneatom/stonedb/edit/stonedb-5.7-dev/website/i18n/${locale}/docusaurus-plugin-content-blog/current/${docPath}`

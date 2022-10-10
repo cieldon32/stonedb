@@ -8,6 +8,8 @@ export const Panel: React.FC<any> = styled.div`
   }
   background-color: ${props => props.color || '#fff'};
   overflow: hidden;
+  background-image: url(${props => props.bg});
+  background-repeat: no-repeat;
   @media (max-width: 996px){
     padding: 0;
   }
@@ -60,4 +62,13 @@ export const SubTitle = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+`
+
+export const EllipsisText = styled.p`
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: ${(props) => props.line!};
+  -webkit-box-orient: vertical;
 `

@@ -5,8 +5,9 @@ import {flatten} from 'ramda';
 import {pickWhen} from '@site/src/utils';
 import aliyun from '@site/static/resource/aliyun.png';
 import xbb from '@site/static/resource/xbb.png';
-import { Context, Panel } from "../styles";
-import { Title, ItemWrap, ListWrap} from './styles';
+import BgCustomer from '@site/static/resource/BgCustomer.png';
+import { Context } from "../styles";
+import { Title, ItemWrap, ListWrap, PanelWrap} from './styles';
 
 const imgs: any = {
   aliyun,
@@ -61,7 +62,7 @@ const Customers: React.FC<any> = ({children}) => {
     init();
   }, []);
   return (
-    <Panel color='#E5E8F0' size="small">
+    <PanelWrap color='#E5E8F0' size="small" bg={BgCustomer}>
       <Context>
         <Title>{title}</Title>
         <ListWrap>
@@ -74,7 +75,7 @@ const Customers: React.FC<any> = ({children}) => {
         }
         </ListWrap>
       </Context>
-    </Panel>
+    </PanelWrap>
   )
 }
 

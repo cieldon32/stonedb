@@ -28,7 +28,8 @@ export default function MDXPage(props: Props): JSX.Element {
   const {wrapperClassName, hide_table_of_contents: hideTableOfContents} =
     frontMatter;
 
-  const isHome = location.pathname === '/' || '/zh/';
+  const isHome = location.pathname === '/' || location.pathname === '/zh/';
+
 
   return (
     <HtmlClassNameProvider

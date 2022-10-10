@@ -3,9 +3,10 @@ import {unified} from 'unified';
 import remarkParse from 'remark-parse';
 import {flatten} from 'ramda';
 import {pickWhen} from '@site/src/utils';
+import BgRoadmap from '@site/static/resource/BgRoadmap.png';
 import {Step} from './step';
-import {data} from './data';
-import { Title, Context, Panel } from "../styles";
+import { Title, Context } from "../styles";
+import {PanelWrap} from './styles';
 
 const RoadMap: React.FC<any> = ({type, children}) => {
   const [title, setTitle] = useState(null);
@@ -24,12 +25,17 @@ const RoadMap: React.FC<any> = ({type, children}) => {
 
   function reduceList(arr: any[]) {
     return arr.map((item) => {
-      const title = item.children[0] && item.children[0].type === 'paragraph' ? item.children[0].children[0]?.value : '';
+      const title = item.children[0]?.type === 'paragraph' ? item.children[0]?.children[0]?.value : '';
       const nodeList = item.children[1]?.children;
+      console.log('nodeList', nodeList)
       const res =  nodeList?.map((data) => {
-        const [title, desc, time] = reduceParagraph(data.children);
+        const list = reduceParagraph(data.children.filter((node) => node.ordered));
+        const [title, desc, time] = flatten(reduceParagraph(data.children.filter((node) => !node.ordered)));
         return {
-          title, desc, time
+          title: title,
+          list: flatten(list),
+          desc: time ? desc : '',
+          time: time ? time : desc
         }
       });
       return {
@@ -54,7 +60,7 @@ const RoadMap: React.FC<any> = ({type, children}) => {
     init();
   }, []);
   return (
-    <Panel>
+    <PanelWrap bg={BgRoadmap}>
       <Context>
         <Title>{title}</Title>
       </Context>
@@ -64,7 +70,7 @@ const RoadMap: React.FC<any> = ({type, children}) => {
         ) : null
       }
       
-    </Panel>
+    </PanelWrap>
   );
 };
 export default RoadMap;

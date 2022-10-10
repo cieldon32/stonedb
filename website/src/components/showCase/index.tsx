@@ -7,8 +7,9 @@ import { Grid, Row, Cell } from "@site/src/hm";
 import kunpeng from '@site/static/resource/kunpeng.png';
 import tx from '@site/static/resource/tx.png';
 import Opengauss from '@site/static/resource/Opengauss.png';
-import { Title, Context, Panel } from "../styles";
-import {ItemWrap} from './styles';
+import BgChinaly from '@site/static/resource/BgChinaly.png';
+import { Title, Context } from "../styles";
+import {ItemWrap, PanelWrap} from './styles';
 
 const imgs: any = {
   kunpeng,
@@ -64,7 +65,7 @@ const ShowCase: React.FC<any> = ({children}) => {
   }, []);
 
   return (
-    <Panel color='#232326'>
+    <PanelWrap color='#232326' bg={BgChinaly}>
       <Context>
         <Title color="#FFFFFF">{title}</Title>
         <Grid>
@@ -82,7 +83,7 @@ const ShowCase: React.FC<any> = ({children}) => {
           </Row>
         </Grid>
       </Context>
-    </Panel>
+    </PanelWrap>
   )
 }
 

@@ -2,14 +2,15 @@
 title: How Integrated HTAP Database StoneDB Achieves 10 to 100 Times the Performance Than MySQL with Only 1/10 the Cost
 authors:
   - gaoriyao
-
+test: hahahha
 tags: [htap, architecture]
-# image: ./img/social-card.png
+# image: https://i.imgur.com/mErPwqL.png
 ---
 
 As we all know, MySQL is one of the most popular OLTP databases in the world. As of 2022, its market share in the whole database industry has reached 43.04% (source: Slintel website). Many enterprises run various business systems on MySQL. However, with the increase of data, databases also need to meet more and more complex analytical requirements, such as BI reports, visualization, and big data applications, in addition to reading and writing online business logic. However, the native architecture of MySQL lacks analytics capabilities, because it's execution engine which is developed based on the Volcano Iterator model does not provide parallel processing functionality and stores data by row. To supplement analytics capabilities for MySQL, database vendors have come up with many solutions. However, many of them are heterogeneous HTAP databases developed based on MySQL.
 What is HTAP? In 2014, Gartner came up with the idea HTAP and defined it as an emerging application architecture that breaks the wall between transaction processing and analytics. HTAP can enable more informed and "in business real-time" decision making.
 A traditional way to implement HTAP is to loosely couple an OLTP system and an OLAP system and use ETL tools to synchronize data from the OLTP system to the OLAP system. This is also how most database vendors construct their HTAP products.
+<!--truncate-->
 # Mainstream HTAP Solutions Built on MySQL
 Let's quickly go through mainstream HTAP solutions that are built on MySQL:
 ## MySQL + Hadoop
