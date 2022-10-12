@@ -11,6 +11,7 @@ import {
   splitNavbarItems,
   useNavbarMobileSidebar,
 } from '@docusaurus/theme-common/internal';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import NavbarItem, {type Props as NavbarItemConfig} from '@theme/NavbarItem';
 import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle';
 import SearchBar from '@theme/SearchBar';
@@ -26,11 +27,23 @@ function useNavbarItems() {
 }
 
 function NavbarItems({items}: {items: NavbarItemConfig[]}): JSX.Element {
+  const {
+    i18n: {currentLocale}
+  } = useDocusaurusContext();
+  function checkShow(item: any) {
+    let res: boolean = true;
+    if(currentLocale === 'en') {
+      res = item.key != 'Forum';
+    } else {
+      res = item.key != 'Discussion';
+    }
+    return res;
+  }
   return (
     <>
-      {items.map((item, i) => (
+      {items.map((item, i) => checkShow(item) ? (
         <NavbarItem {...item} key={i} />
-      ))}
+      ) : null)}
     </>
   );
 }

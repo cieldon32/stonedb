@@ -124,6 +124,16 @@ const config = {
             key: 'Blog',
           },
           {
+            label: 'Forum',
+            to: 'https://forum.stonedb.io',
+            key: 'Forum',
+          },
+          {
+            label: 'Discussion',
+            to: 'https://github.com/stoneatom/stonedb/discussions',
+            key: 'Discussion',
+          },
+          {
             type: 'custom-github',
             position: 'right'
           },{
