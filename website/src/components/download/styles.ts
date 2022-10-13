@@ -5,6 +5,7 @@ import { Panel } from '../styles';
 export const PanelWrap = styled(Panel)`
   background-size: auto 100%;
   background-position-x: right;
+  padding: 0 0 109px 0;
 `
 
 export const Item = styled.div`
@@ -12,6 +13,10 @@ export const Item = styled.div`
   padding: 14px;
   height: 500px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   h2 {
     font-size: 55px;
     font-weight: 400;
