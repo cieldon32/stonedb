@@ -10,7 +10,7 @@ export const PanelWrap = styled(Panel)`
 export const Item = styled.div`
   flex: 1;
   padding: 14px;
-  height: 440px;
+  height: 500px;
   overflow: hidden;
   h2 {
     font-size: 55px;
