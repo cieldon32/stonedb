@@ -114,6 +114,11 @@ const config = {
             key: 'Docs',
           },
           {
+            label: 'Discussion',
+            to: 'https://github.com/stoneatom/stonedb/discussions',
+            key: 'Discussion',
+          },
+          {
             label: 'Community',
             to: '/community',
             key: 'Community',
@@ -128,11 +133,7 @@ const config = {
             to: 'https://forum.stonedb.io',
             key: 'Forum',
           },
-          {
-            label: 'Discussion',
-            to: 'https://github.com/stoneatom/stonedb/discussions',
-            key: 'Discussion',
-          },
+          
           {
             type: 'custom-github',
             position: 'right'
