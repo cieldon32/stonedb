@@ -59,8 +59,8 @@ const Download: React.FC = (props: any) => {
           <p>{strs[1]}</p>
           <Space>
             <DownLoadBtn size="large" type="primary" onClick={gotoDownload}>
+              <b><DownloadOutlined /></b>
               <Translate id="home.download.btn">下载</Translate>
-              <DownloadOutlined />
             </DownLoadBtn>
             <Button type="text" onClick={gotoStart}>
               <Translate id="home.download.start">快速上手</Translate>

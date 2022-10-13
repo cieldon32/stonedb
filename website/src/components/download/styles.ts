@@ -16,7 +16,7 @@ export const Item = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   h2 {
     font-size: 55px;
     font-weight: 400;
@@ -44,6 +44,7 @@ export const Item = styled.div`
 
 export const DownLoadBtn = styled(Button)`
   width: 174px;
+  b{display: inline-block; margin-right: 8px;}
   @media (max-width: 996px){
     display: none;
   }
